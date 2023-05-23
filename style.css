@@ -1,0 +1,301 @@
+/* 
+================================
+Variables
+================================
+*/
+:root {
+  /* --clr-primary: #dedde2; */
+  
+  --clr-primary: #ffff;
+  --clr-primary-light: #f2f2f2;
+  --clr-grey-1: #0D0D0D;
+  --clr-grey-5: #BDBBBE;
+  --clr-grey-10: #f1f5f8;
+  --ff-primary: "Catamaran", sans-serif;
+  --ff-secondary: "Grand Hotel", cursive;
+  --transition: all 0.3s linear;
+  --spacing: 0.15rem;
+  --radius: 0.5rem;
+  --container-padding: 2% 5% 5%;
+}
+
+
+
+body {
+  font-family: var(--ff-primary);
+  color: var(--clr--grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 4rem;
+    font-weight: bolder;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+p{
+  
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+}
+
+/*
+================
+Navigation
+================ 
+*/
+
+.navbar{
+  background-color: var(--clr-primary);
+  padding: 2% 5% 0%;
+}
+
+
+.nav-item{
+  padding-left: 2rem;
+  font-weight: bolder;
+  color: var(--clr-grey-1);
+}
+
+
+.navbar-brand h3{
+  font-weight: bolder;
+}
+
+/* 
+================
+Banner
+================ 
+*/
+#Banner{
+  background-color: var(--clr-primary);
+  padding: var(--container-padding)
+}
+
+#banner-img {
+
+  position: relative;
+}
+
+#banner-contact {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 5%;
+  left: -10%;
+  z-index: 1;
+}
+
+.social-logo{
+    margin: 10px 5px 10px;
+      font-size: 20px;
+transition: 0.3s;
+}
+.fa-facebook-f:hover {
+  color: #4267B2;
+  font-size: 35px;
+}
+
+.fa-twitter:hover {
+  color: #00acee;
+  font-size: 35px;
+
+}
+
+.telegram:hover {
+  color: #229ED9;
+  font-size: 35px;
+}
+
+.fa-instagram:hover {
+  color: #8a3ab9;
+  font-size: 35px;
+}
+.fa-envelope:hover {
+  color: #98a8b8;
+  font-size: 35px;
+}
+
+/* 
+================
+About Us
+================ 
+*/
+
+#about{
+  background-color: var(--clr-primary);
+  padding: var(--container-padding);
+}
+
+#hobbys {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 5px 15px 5px;
+    margin:10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* 
+================
+About Us
+================ 
+*/
+#skills{
+  padding: var(--container-padding);
+}
+.progress
+{
+width: 50%;
+}
+.progress-bar{
+  background-color: var(--clr-grey-1);
+  width: 25%;
+}
+
+.skills h4{
+  line-height: 1;
+}
+
+/* 
+================
+Contact
+================ 
+*/
+
+#contact{
+  background-color: var(--clr-primary);
+  padding:2% 5% 0%;
+}
+
+#contact-img{
+  max-width: auto;
+  padding: 5% 3% 5%;
+  max-height: 90%;
+}
+
+.form-control{
+  max-width: 75%;
+}
+
+#contact-input{
+  padding: 5% 3% 5%;
+}
+
+#my-contact{
+  margin-bottom: 20px;
+}
+
+/* 
+================
+Footer
+================ 
+*/
+#footer{
+background-color: var(--clr-primary);
+padding:2% 1% 2%;
+}
+
+/* 
+================
+MEDIA
+================ 
+*/
+@media (max-width: 1000px) and (min-width: 768px) {
+  #banner-contact {
+    top: 20%;
+    left: 0%;
+
+  }
+
+}
+
+@media (max-width: 991px) {
+  #contact .col-lg-4 {
+    display: none;
+  }
+
+  #contact-input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+h1 {
+  font-size: 3.5rem;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+h3 {
+  font-size: 1rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+}
+
+@media (max-width: 767px) {
+.form-control {
+    max-width: 100%;
+  }
+    #banner-contact i {
+      display: none;
+    }
+.progress{
+  width: 90%;
+}
+
+}
+
+@media (max-width: 330px) {
+h1 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+  }
+h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+#hobbys{
+  font-size: 0.5rem;
+}
+}
